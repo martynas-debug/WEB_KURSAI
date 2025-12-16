@@ -8,5 +8,16 @@
 
 
 
+$role = "moderatorius"; // Čia galite pakeisti rolę ir išbandyti įvairias sąlygas
+if ($role == "vartotojas") {
+    echo "Jūs esate vartotojas.";
+} elseif ($role == "moderatorius") {
+    echo "Jūs esate moderatorius.";
+} elseif ($role == "administratorius") {
+    echo "Jūs esate administratorius.";
+} else {
+    echo "Klaida: neteisinga rolė.";
+}
+
 
 
