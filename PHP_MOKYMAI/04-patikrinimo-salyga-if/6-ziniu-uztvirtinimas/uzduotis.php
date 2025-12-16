@@ -31,6 +31,33 @@
 // parduotų kepalų.
 
 
+// Duomenų įvedimas
+$workHoursPerDay = 8;
+$loavesPerHourPerWorker = 20; // Kiek kepalų gali iškepti vienas darbuotojas per valandą
+$numberOfWorkers = 5; // Kiek darbuotojų dirba kepykloje
+$costPerLoaf = 1.5; // Vieno kepalo savikaina
+$salePricePerLoaf = 3.0; // Vieno kepalo pardavimo kaina
+$dailyOrder = 800; // Kiek kepalų turi būti iškepta tą dieną (užsakymai)
+// Skaičiavimai
+$totalLoavesBaked = $workHoursPerDay * $loavesPerHourPerWorker * $numberOfWorkers;
+$totalCost = $totalLoavesBaked * $costPerLoaf;
+$totalRevenue = min($totalLoavesBaked, $dailyOrder) * $salePricePerLoaf;
+$totalProfit = $totalRevenue - ($totalLoavesBaked * $costPerLoaf);
+// Rezultatų išvedimas
+echo "Kepykla per dieną iškeps: $totalLoavesBaked kepalų duonos.\n";
+if ($totalLoavesBaked >= $dailyOrder) {
+    echo "Kepykla spės įgyvendinti visus užsakymus.\n";
+} else {
+    $loavesShort = $dailyOrder - $totalLoavesBaked;
+    echo "Kepykla nespės iškepti $loavesShort kepalų duonos.\n";
+}
+echo "Visų kepalų savikaina: €$totalCost.\n";
+echo "Gautos pajamos: €$totalRevenue.\n";
+echo "Gautas pelnas: €$totalProfit.\n";
+
+// Papildoma užduotis įgyvendinta: pajamos ir pelnas skaičiuojami tik iš
+// parduotų kepalų.
+
 
 
 
