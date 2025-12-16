@@ -1,0 +1,15 @@
+.navbar ul {
+    margin: 0;
+    padding: 0;
+}
+.navbar ul li {
+    display: inline-block;
+}
+.navbar, footer {
+    background-color: #ccc;
+    padding: 1em;
+    text-align: center;
+}
+.content {
+    padding: 1em;
+}

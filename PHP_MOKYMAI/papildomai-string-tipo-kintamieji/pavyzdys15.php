@@ -1,0 +1,4 @@
+<?php
+
+echo "zodis world tekste kartojasi kartu: ";
+echo substr_count("Hello world. The world is nice", "world");
