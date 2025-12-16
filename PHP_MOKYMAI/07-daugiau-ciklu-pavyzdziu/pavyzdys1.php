@@ -25,7 +25,7 @@
                 <th>Antras stulpelis</th>
                 <th>Trecias stulpelis</th>
                 <th>Ketvirtas stulpelis</th>
-                <th>Penktas stulpelis</th>
+                <th>Suma</th>
             </tr>
             <?php
                 for ($i = 0; $i < 10; $i++) {
@@ -54,3 +54,20 @@
 // - Pridėkite šeštą stulpelį, kuriame išveskite vidurkį, gautą iš pirmų keturių
 // eilutės stulpelių.
 
+                for ($i = 0; $i < 10; $i++) {
+                    echo "<tr>";
+                    $sum = 0;
+                    for ($j = 0; $j < 5; $j++) {
+                        $number = rand(1, 100);
+                        echo "<td>" . $number . "</td>";
+                        $sum += $number;
+                    }
+                    $average = $sum / 4; // Vidurkis iš pirmų keturių stulpelių
+                    echo "<td>" . $sum . "</td>"; // Suma
+                    echo "<td>" . number_format($average, 2) . "</td>"; // Vidurkis su dviem skaitmenimis po kablelio
+                    echo "</tr>";
+                }
+            ?>
+        </table>
+    </body>
+</html>
