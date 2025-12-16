@@ -5,4 +5,6 @@
 // amžius: 15“.
 
 
+$amzius = 25;
+echo "Įvestas amžius: " . $amzius;
 
