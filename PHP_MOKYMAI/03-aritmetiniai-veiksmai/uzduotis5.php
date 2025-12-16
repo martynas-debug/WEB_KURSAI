@@ -6,6 +6,11 @@
 // ...
 // 5 * 10 = 50
 
+$number = 7; // Pasirinktas skaičius
+for ($i = 1; $i <= 10; $i++) {
+    $result = $number * $i;
+    echo "$number * $i = $result\n";
+}
 
 
 

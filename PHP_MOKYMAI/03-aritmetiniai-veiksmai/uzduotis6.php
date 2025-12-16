@@ -7,6 +7,12 @@
 // Kad gauti antrą skaitmenį galima dalinti su % iš 10.
 
 
+$number = 47; // Duženklis skaičius
+$firstDigit = floor($number / 10);
+$secondDigit = $number % 10;
+$sum = $firstDigit + $secondDigit;
+echo "Skaičiaus $number skaitmenų suma: $sum";
+
 
 
 
