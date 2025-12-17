@@ -6,7 +6,7 @@
 // 2. The capital of Greece is Athens
 // 3. ...
 
-$ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels",
+$sostines = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels",
 "Denmark"=>"Copenhagen", "Finland"=>"Helsinki", "France" => "Paris",
 "Slovakia"=>"Bratislava", "Slovenia"=>"Ljubljana", "Germany" => "Berlin", "Greece" =>
 "Athens", "Ireland"=>"Dublin", "Netherlands"=>"Amsterdam", "Portugal"=>"Lisbon",
@@ -16,7 +16,9 @@ $ceu = array( "Italy"=>"Rome", "Luxembourg"=>"Luxembourg", "Belgium"=> "Brussels
 "Austria" => "Vienna", "Poland"=>"Warsaw") ;
 
 
-
+foreach ($sostines as $raktas => $reiksme) {
+    echo "Salies $raktas sostine yra $reiksme <br>";
+}
 
 
 
